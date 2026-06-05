@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nombre, apellido;
+
+        Console.Write("Ingrese el primer nombre: ");
+        nombre = Console.ReadLine();
+
+        Console.Write("Ingrese el primer apellido: ");
+        apellido = Console.ReadLine();
+
+        string correo = string.Concat(nombre, ".", apellido, "@institucion.edu");
+
+        Console.WriteLine("Correo generado: " + correo);
+    }
+}
