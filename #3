@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string servidor;
+
+        Console.Write("Ingrese el nombre del servidor: ");
+        servidor = Console.ReadLine();
+
+        servidor = servidor.ToLower();
+
+        Console.WriteLine("Nombre normalizado: " + servidor);
+        Console.WriteLine("Longitud: " + servidor.Length);
+    }
+}
