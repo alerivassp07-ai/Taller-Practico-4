@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double nota1, nota2;
+
+        Console.Write("Ingrese la primera nota: ");
+        nota1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Ingrese la segunda nota: ");
+        nota2 = Convert.ToDouble(Console.ReadLine());
+
+        double promedio = (nota1 + nota2) / 2;
+
+        Console.WriteLine("Promedio redondeado: " + Math.Round(promedio));
+        Console.WriteLine("Nota máxima: " + Math.Max(nota1, nota2));
+    }
+}
