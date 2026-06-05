@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string ip, estado;
+        int puerto;
+
+        Console.Write("Ingrese la IP: ");
+        ip = Console.ReadLine();
+
+        Console.Write("Ingrese el puerto: ");
+        puerto = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Ingrese el estado: ");
+        estado = Console.ReadLine();
+
+        Console.WriteLine($"IP: {ip} | Puerto: {puerto} | Estado: {estado}");
+    }
+}
