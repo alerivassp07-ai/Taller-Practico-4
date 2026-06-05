@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double x, y;
+
+        Console.Write("Ingrese coordenada X: ");
+        x = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Ingrese coordenada Y: ");
+        y = Convert.ToDouble(Console.ReadLine());
+
+        double distancia = Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2));
+
+        Console.WriteLine("Distancia: " + distancia);
+        Console.WriteLine("Valor absoluto de X: " + Math.Abs(x));
+        Console.WriteLine("Valor absoluto de Y: " + Math.Abs(y));
+    }
+}
