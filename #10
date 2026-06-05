@@ -1,0 +1,30 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string entorno, proyecto;
+        int num1, num2;
+
+        Console.Write("Ingrese el entorno: ");
+        entorno = Console.ReadLine();
+
+        Console.Write("Ingrese el nombre del proyecto: ");
+        proyecto = Console.ReadLine();
+
+        Console.Write("Ingrese el primer número: ");
+        num1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Ingrese el segundo número: ");
+        num2 = Convert.ToInt32(Console.ReadLine());
+
+        string letra = entorno.Substring(0, 1);
+        int mayor = Math.Max(num1, num2);
+        string ultimos = proyecto.Substring(proyecto.Length - 3);
+
+        string token = (letra + mayor + ultimos).ToUpper();
+
+        Console.WriteLine($"Token generado: {token}");
+    }
+}
