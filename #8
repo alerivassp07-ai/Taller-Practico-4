@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double costoBase;
+
+        Console.Write("Ingrese el costo de matrícula: ");
+        costoBase = Convert.ToDouble(Console.ReadLine());
+
+        double descuento = costoBase * 0.15;
+        double total = Math.Ceiling(costoBase - descuento);
+
+        Console.WriteLine($"Costo Base: {costoBase:C}");
+        Console.WriteLine($"Descuento: {descuento:C}");
+        Console.WriteLine($"Total a pagar: {total:C}");
+    }
+}
