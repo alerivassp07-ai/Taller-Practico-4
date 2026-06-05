@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string codigo;
+
+        Console.Write("Ingrese el código del curso: ");
+        codigo = Console.ReadLine();
+
+        codigo = codigo.Trim();
+        codigo = codigo.Replace("OLD-", "NEW-");
+
+        Console.WriteLine("Código actualizado: " + codigo);
+
+        if (codigo.Contains("ING"))
+        {
+            Console.WriteLine("Pertenece a Ingeniería");
+        }
+        else
+        {
+            Console.WriteLine("No pertenece a Ingeniería");
+        }
+    }
+}
