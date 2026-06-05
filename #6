@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string nombre, apellido;
+
+        Console.Write("Ingrese el nombre: ");
+        nombre = Console.ReadLine();
+
+        Console.Write("Ingrese el apellido: ");
+        apellido = Console.ReadLine();
+
+        Console.WriteLine("Iniciales: " + nombre[0] + apellido[0]);
+    }
+}
