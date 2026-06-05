@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string correo;
+
+        Console.Write("Ingrese el correo: ");
+        correo = Console.ReadLine();
+
+        int posicion = correo.IndexOf("@");
+
+        string usuario = correo.Substring(0, posicion);
+        string dominio = correo.Substring(posicion + 1);
+
+        Console.WriteLine("Usuario: " + usuario);
+        Console.WriteLine("Dominio: " + dominio);
+    }
+}
